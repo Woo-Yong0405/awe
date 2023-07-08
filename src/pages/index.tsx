@@ -1,5 +1,4 @@
 import { useState } from "react";
-import i from "../styles/Home.module.css";
 
 export default function Home() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -83,7 +82,7 @@ export default function Home() {
             </select>
             <button onClick={()=>{
               let asdf = 0
-              const array = [document.getElementById("birthday")?.value, document.getElementById("jadegift")?.value, document.getElementById("device")?.value, document.getElementById("poem1")?.value, document.getElementById("poem2")?.value, document.getElementById("malaysia")?.value, document.getElementById("gobaek")?.value, document.getElementById("cape")?.value, document.getElementById("artist")?.value, document.getElementById("mcafirst")?.value];
+              const array = [(document.getElementById("birthday") as HTMLInputElement)?.value, (document.getElementById("jadegift") as HTMLInputElement)?.value, (document.getElementById("device") as HTMLInputElement)?.value, (document.getElementById("poem1") as HTMLInputElement)?.value, (document.getElementById("poem2") as HTMLInputElement)?.value, (document.getElementById("malaysia") as HTMLInputElement)?.value, (document.getElementById("gobaek") as HTMLInputElement)?.value, (document.getElementById("cape") as HTMLInputElement)?.value, (document.getElementById("artist") as HTMLInputElement)?.value, (document.getElementById("mcafirst") as HTMLInputElement)?.value];
               array.forEach((value, index) => {
                 if (array[index] == "wrong") {
                   asdf = asdf + 1;
