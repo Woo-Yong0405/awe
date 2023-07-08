@@ -1,10 +1,11 @@
 import { useState } from "react";
+import i from "../styles/Home.module.css";
 
 export default function Home() {
   const [loggedIn, setLoggedIn] = useState(false);
   return (
     <>
-      <div>
+      <div className={i.bigDiv}>
         {loggedIn ? (
           <p>축하드립니다. 성공하셔서 달토끼가 빡쳤네요 @dallr.abbit한테 디엠으로 "안녕"을 보내주신다면 달토끼가 다음 레벨로 가는 길을 알려드릴지도 모르겠네요.</p>
          ) : (

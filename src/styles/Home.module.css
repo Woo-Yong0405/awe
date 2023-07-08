@@ -1,0 +1,7 @@
+.bigDiv {
+    display: flex;
+    flex-direction: column;
+}
+.bigDiv select {
+    margin-bottom: 50px;
+}
